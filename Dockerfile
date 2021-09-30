@@ -6,7 +6,7 @@ WORKDIR /app
 COPY *.sln .
 COPY ConversaoPeso.Web/*.csproj ./ConversaoPeso.Web/
 RUN dotnet restore
-
+EXPOSE 80
 # copy everything else and build app
 COPY . ./
 RUN dotnet publish -c Release -o out
