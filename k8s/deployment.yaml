@@ -30,4 +30,4 @@ spec:
     - port: 80
       name: http
       nodePort: 30000
-  type: NodePort 
+  type: LoadBalancer 
